@@ -3,8 +3,12 @@ package org.bootcamp.digionebank
 class Pessoa() {
      var nome: String = "Matheus"
      var cpf: String = "132.456.789-00"
-    private set
-// modo tradicional get e set
+     private set // modificador de visibilidade para set
+
+
+    fun toUpperCaseNome() = this.nome.toUpperCase()
+
+    // modo tradicional get e set
 //    private var nome: String = "Matheus"
 //    private var cpf: String = "132.456.789-00"
 
@@ -25,6 +29,7 @@ class Pessoa() {
 fun main() {
     val matheus = Pessoa()
     println(matheus.cpf)
+    println(matheus.toUpperCaseNome())
 
 // modo tradicional get e set
 //    println(matheus.getCpf())
